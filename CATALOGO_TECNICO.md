@@ -24,14 +24,18 @@
 | 04 | Memoria Contextual de Cliente | validada | V1 local con timeline, conflictos y tests |
 | 05 | Pulso de Riesgo | validada | V1 local con scoring, umbrales y tests |
 | 06 | Buscador Privado Aumentado | validada | V1 local con ranking y citas internas |
-| 07 | Enrutador Inteligente | pendiente | Sin implementación |
-| 08 | Voz de Marca Inteligente | pendiente | Sin implementación |
-| 09 | Verificador Normativo | pendiente | Sin implementación |
+| 07 | Enrutador Inteligente | validada | V1 local con reglas de ruteo y plan de ejecución |
+| 08 | Voz de Marca Inteligente | validada | V1 local con ajuste de tono y checklist |
+| 09 | Verificador Normativo | validada | V1 local con reglas y no conformidades |
 | 10 | Puerta de Aprobación Humana | validada | V2 funcional con CLI, demo y tests locales |
+
+## Cierre operativo actual
+
+El repositorio queda en estado operativo base: las 10 skills previstas están implementadas en versión local validada con tests automáticos y evidencias reproducibles.
 
 ## Nota operativa
 
-Las siguientes skills deben iniciarse reutilizando `src/skillforge/skills/_plantilla_skill.py` para mantener consistencia técnica, trazabilidad y velocidad de desarrollo.
+Las siguientes iteraciones deben mantener el contrato común (`EntradaSkill` y `ResultadoSkill`), seguridad por diseño, trazabilidad y revisión humana para acciones sensibles.
 
 Publicado bajo licencia Creative Commons CC BY-SA 4.0 International.  
 © 2025 – Txema Ríos. Todos los derechos compartidos.

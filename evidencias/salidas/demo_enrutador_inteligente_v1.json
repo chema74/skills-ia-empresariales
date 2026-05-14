@@ -1,0 +1,30 @@
+{
+  "nombre_skill": "enrutador_inteligente",
+  "estado": "ok",
+  "salida": {
+    "mensaje": "Enrutamiento completado en local",
+    "intencion": "Necesito analizar anomalia de costes y generar informe ejecutivo.",
+    "skill_destino": "radar_anomalias",
+    "skills_candidatas": [
+      "forjador_informes",
+      "radar_anomalias"
+    ],
+    "plan_ejecucion": [
+      "validar_entrada",
+      "ejecutar_skill:radar_anomalias",
+      "validar_resultado",
+      "registrar_trazas_locales"
+    ],
+    "metadatos": {
+      "prioridad": "media"
+    }
+  },
+  "trazas": [
+    "local|2026-05-14T18:44:00.765215+00:00|inicio_enrutamiento",
+    "local|2026-05-14T18:44:00.766222+00:00|coincidencias_detectadas",
+    "local|2026-05-14T18:44:00.766222+00:00|plan_generado"
+  ],
+  "advertencias": [
+    "intencion ambigua: múltiples skills candidatas"
+  ]
+}

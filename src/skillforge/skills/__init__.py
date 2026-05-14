@@ -7,6 +7,7 @@ from .buscador_privado_aumentado import (
     SolicitudBusquedaPrivada,
     evaluar_buscador_privado_aumentado,
 )
+from .enrutador_inteligente import EnrutadorInteligenteSkill, SolicitudEnrutamiento, evaluar_enrutador_inteligente
 from .forjador_informes import ForjadorInformesSkill, SolicitudForjadorInformes, evaluar_forjador_informes
 from .lector_inteligente_documental import (
     LectorInteligenteDocumentalSkill,
@@ -27,6 +28,13 @@ from .puerta_aprobacion_humana import (
     evaluar_puerta_aprobacion_humana,
 )
 from .radar_anomalias import RadarAnomaliasSkill, SolicitudRadarAnomalias, evaluar_radar_anomalias
+from .verificador_normativo import (
+    ReglaNormativa,
+    SolicitudVerificacionNormativa,
+    VerificadorNormativoSkill,
+    evaluar_verificador_normativo,
+)
+from .voz_marca_inteligente import SolicitudVozMarca, VozMarcaInteligenteSkill, evaluar_voz_marca_inteligente
 
 __all__ = [
     "SkillBase",
@@ -34,6 +42,9 @@ __all__ = [
     "DocumentoPrivado",
     "SolicitudBusquedaPrivada",
     "evaluar_buscador_privado_aumentado",
+    "EnrutadorInteligenteSkill",
+    "SolicitudEnrutamiento",
+    "evaluar_enrutador_inteligente",
     "ForjadorInformesSkill",
     "SolicitudForjadorInformes",
     "evaluar_forjador_informes",
@@ -55,4 +66,11 @@ __all__ = [
     "RadarAnomaliasSkill",
     "SolicitudRadarAnomalias",
     "evaluar_radar_anomalias",
+    "ReglaNormativa",
+    "SolicitudVerificacionNormativa",
+    "VerificadorNormativoSkill",
+    "evaluar_verificador_normativo",
+    "SolicitudVozMarca",
+    "VozMarcaInteligenteSkill",
+    "evaluar_voz_marca_inteligente",
 ]

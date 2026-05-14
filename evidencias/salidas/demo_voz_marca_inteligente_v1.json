@@ -1,0 +1,22 @@
+{
+  "nombre_skill": "voz_marca_inteligente",
+  "estado": "ok",
+  "salida": {
+    "mensaje": "Voz de marca adaptada en local",
+    "tono_objetivo": "profesional",
+    "texto_original": "Nuestro equipo siempre entrega soluciones perfectas para todos los clientes.",
+    "texto_adaptado": "Comunicación profesional: Nuestro equipo siempre entrega soluciones perfectas para todos los clientes.",
+    "checklist_marca": {
+      "tono_objetivo_aplicado": true,
+      "sin_promesas_absolutas": false,
+      "incluye_palabras_clave": true
+    }
+  },
+  "trazas": [
+    "local|2026-05-14T18:47:23.449748+00:00|inicio_voz_marca",
+    "local|2026-05-14T18:47:23.449748+00:00|texto_adaptado"
+  ],
+  "advertencias": [
+    "termino no recomendado detectado: siempre"
+  ]
+}

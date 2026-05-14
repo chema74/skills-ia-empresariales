@@ -1,0 +1,23 @@
+{
+  "nombre_skill": "verificador_normativo",
+  "estado": "ok",
+  "salida": {
+    "mensaje": "Verificacion normativa completada en local",
+    "total_reglas": 3,
+    "total_conformidades": 3,
+    "total_no_conformidades": 0,
+    "severidad_global": "baja",
+    "conformidades": [
+      "RN-001",
+      "RN-002",
+      "RN-003"
+    ],
+    "no_conformidades": []
+  },
+  "trazas": [
+    "local|2026-05-14T18:53:24.222818+00:00|inicio_verificacion_normativa",
+    "local|2026-05-14T18:53:24.222818+00:00|reglas_evaluadas",
+    "local|2026-05-14T18:53:24.222818+00:00|informe_normativo_generado"
+  ],
+  "advertencias": []
+}

@@ -1,0 +1,2 @@
+Comunicación al cliente sobre seguimiento de incidencia.
+Incluye trazabilidad y revisión humana antes de envío.
