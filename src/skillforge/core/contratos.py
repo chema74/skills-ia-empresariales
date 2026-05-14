@@ -1,12 +1,22 @@
-﻿"""Contratos comunes para las skills del repositorio."""
+"""Contratos comunes para las skills del repositorio."""
 
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from typing import Any
 
 
 @dataclass
+class EntradaSkill:
+    """Entrada comun para ejecuciones de skills."""
+
+    accion: str
+    descripcion: str
+    solicitante: str
+    contexto: dict[str, Any] = field(default_factory=dict)
+
+
+@dataclass
 class ResultadoSkill:
-    """Resultado estándar de ejecución de una skill."""
+    """Resultado estandar de ejecucion de una skill."""
 
     nombre_skill: str
     estado: str
@@ -15,6 +25,6 @@ class ResultadoSkill:
     advertencias: list[str]
 
     def es_correcto(self) -> bool:
-        """Devuelve True cuando el estado de ejecución es correcto."""
+        """Devuelve True cuando el estado de ejecucion es correcto."""
 
         return self.estado == "ok"
