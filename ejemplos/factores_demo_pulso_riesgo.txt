@@ -1,0 +1,4 @@
+continuidad_operativa|8|4.0
+cumplimiento_normativo|7|3.5
+dependencia_proveedor|9|3.0
+ciberhigiene|6|2.5

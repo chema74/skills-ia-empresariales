@@ -1,0 +1,4 @@
+2026-05-01T09:00:00|alta|Alta del cliente en canal web|crm
+2026-05-03T11:30:00|contacto|Llamada de seguimiento comercial|ventas
+2026-05-08T16:20:00|queja|Incidencia por retraso en entrega|soporte
+2026-05-10T10:10:00|cierre|Cierre de incidencia con propuesta compensatoria|soporte

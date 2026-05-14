@@ -1,0 +1,35 @@
+{
+  "nombre_skill": "buscador_privado_aumentado",
+  "estado": "ok",
+  "salida": {
+    "mensaje": "Busqueda privada completada en local",
+    "consulta": "riesgo revision humana contingencia",
+    "total_resultados": 2,
+    "resultados": [
+      {
+        "doc_id": "DOC-002",
+        "titulo": "Política de Riesgo",
+        "fuente": "politicas",
+        "score": 2,
+        "citas": [
+          "Criterios de evaluación de riesgo y revisión humana para acciones sensibles."
+        ]
+      },
+      {
+        "doc_id": "DOC-001",
+        "titulo": "Manual de Operaciones",
+        "fuente": "manual_interno",
+        "score": 1,
+        "citas": [
+          "Procedimiento interno para contingencia logística y escalado de incidencias."
+        ]
+      }
+    ]
+  },
+  "trazas": [
+    "local|2026-05-14T18:37:55.186676+00:00|inicio_busqueda_privada",
+    "local|2026-05-14T18:37:55.186676+00:00|ranking_calculado",
+    "local|2026-05-14T18:37:55.186676+00:00|respuesta_generada"
+  ],
+  "advertencias": []
+}

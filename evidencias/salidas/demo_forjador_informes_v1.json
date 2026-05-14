@@ -1,0 +1,17 @@
+{
+  "nombre_skill": "forjador_informes",
+  "estado": "ok",
+  "salida": {
+    "mensaje": "Informe generado en local",
+    "titulo": "Informe Ejecutivo Semanal",
+    "informe_markdown": "# Informe Ejecutivo Semanal\n\n## Contexto\nSolicitante: direccion_operaciones\nDescripcion: Consolidacion semanal de resultados\n\n## Metricas\n- incidencias: 14\n- anomalias_coste: 1\n- tickets_cerrados: 27\n\n## Hallazgos\n- Incremento de incidencias operativas en logística.\n- Desviación anómala detectada en costes de transporte.\n- Necesidad de revisión contractual con proveedor principal.\n\n## Recomendaciones\n- Activar mesa de seguimiento con proveedor logistico\n- Revisar umbrales de alerta para costes\n",
+    "total_hallazgos": 3,
+    "total_metricas": 3,
+    "total_recomendaciones": 2
+  },
+  "trazas": [
+    "local|2026-05-14T18:10:30.348701+00:00|inicio_forjado_informe",
+    "local|2026-05-14T18:10:30.348701+00:00|informe_generado"
+  ],
+  "advertencias": []
+}

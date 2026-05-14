@@ -1,0 +1,3 @@
+DOC-001|Manual de Operaciones|Procedimiento interno para contingencia logística y escalado de incidencias.|manual_interno
+DOC-002|Política de Riesgo|Criterios de evaluación de riesgo y revisión humana para acciones sensibles.|politicas
+DOC-003|Guía Comercial|Buenas prácticas de seguimiento de cliente y cierre de oportunidades.|ventas

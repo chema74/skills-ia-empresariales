@@ -1,0 +1,50 @@
+{
+  "nombre_skill": "memoria_contextual_cliente",
+  "estado": "ok",
+  "salida": {
+    "mensaje": "Memoria contextual consolidada en local",
+    "cliente_id": "CL-2026-001",
+    "total_eventos": 4,
+    "ultima_interaccion": {
+      "fecha": "2026-05-10T10:10:00",
+      "tipo": "cierre",
+      "detalle": "Cierre de incidencia con propuesta compensatoria"
+    },
+    "responsable_actual": "account_manager_01",
+    "prioridad_actual": "alta",
+    "timeline": [
+      {
+        "fecha": "2026-05-01T09:00:00",
+        "tipo": "alta",
+        "detalle": "Alta del cliente en canal web",
+        "origen": "crm"
+      },
+      {
+        "fecha": "2026-05-03T11:30:00",
+        "tipo": "contacto",
+        "detalle": "Llamada de seguimiento comercial",
+        "origen": "ventas"
+      },
+      {
+        "fecha": "2026-05-08T16:20:00",
+        "tipo": "queja",
+        "detalle": "Incidencia por retraso en entrega",
+        "origen": "soporte"
+      },
+      {
+        "fecha": "2026-05-10T10:10:00",
+        "tipo": "cierre",
+        "detalle": "Cierre de incidencia con propuesta compensatoria",
+        "origen": "soporte"
+      }
+    ]
+  },
+  "trazas": [
+    "local|2026-05-14T18:14:52.258187+00:00|inicio_memoria_cliente",
+    "local|2026-05-14T18:14:52.258187+00:00|eventos_ordenados",
+    "local|2026-05-14T18:14:52.258187+00:00|memoria_consolidada"
+  ],
+  "advertencias": [
+    "se detecta mezcla de eventos de queja y cierre: revisar consistencia"
+  ]
+}

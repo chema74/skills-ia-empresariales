@@ -20,10 +20,10 @@
 |---|---|---|---|
 | 01 | Lector Inteligente Documental | validada | V1 local con demo, evidencia y tests |
 | 02 | Radar de Anomalías | validada | V1 local con umbral estadístico, demo y tests |
-| 03 | Forjador de Informes | pendiente | Sin implementación |
-| 04 | Memoria Contextual de Cliente | pendiente | Sin implementación |
-| 05 | Pulso de Riesgo | pendiente | Sin implementación |
-| 06 | Buscador Privado Aumentado | pendiente | Sin implementación |
+| 03 | Forjador de Informes | validada | V1 local con informe markdown, demo y tests |
+| 04 | Memoria Contextual de Cliente | validada | V1 local con timeline, conflictos y tests |
+| 05 | Pulso de Riesgo | validada | V1 local con scoring, umbrales y tests |
+| 06 | Buscador Privado Aumentado | validada | V1 local con ranking y citas internas |
 | 07 | Enrutador Inteligente | pendiente | Sin implementación |
 | 08 | Voz de Marca Inteligente | pendiente | Sin implementación |
 | 09 | Verificador Normativo | pendiente | Sin implementación |

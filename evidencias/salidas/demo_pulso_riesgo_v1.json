@@ -1,0 +1,48 @@
+{
+  "nombre_skill": "pulso_riesgo",
+  "estado": "ok",
+  "salida": {
+    "mensaje": "Pulso de riesgo calculado en local",
+    "puntuacion": 98.5,
+    "nivel_riesgo": "alto",
+    "umbral_medio": 35.0,
+    "umbral_alto": 70.0,
+    "detalle_factores": [
+      {
+        "nombre": "continuidad_operativa",
+        "severidad": 8,
+        "peso": 4.0,
+        "contribucion": 32.0
+      },
+      {
+        "nombre": "cumplimiento_normativo",
+        "severidad": 7,
+        "peso": 3.5,
+        "contribucion": 24.5
+      },
+      {
+        "nombre": "dependencia_proveedor",
+        "severidad": 9,
+        "peso": 3.0,
+        "contribucion": 27.0
+      },
+      {
+        "nombre": "ciberhigiene",
+        "severidad": 6,
+        "peso": 2.5,
+        "contribucion": 15.0
+      }
+    ],
+    "recomendaciones": [
+      "Activar revisión humana prioritaria",
+      "Aplicar plan de mitigación inmediato",
+      "Escalar a comité de riesgo"
+    ]
+  },
+  "trazas": [
+    "local|2026-05-14T18:18:32.016081+00:00|inicio_pulso_riesgo",
+    "local|2026-05-14T18:18:32.016081+00:00|puntuacion_calculada",
+    "local|2026-05-14T18:18:32.016081+00:00|clasificacion_riesgo"
+  ],
+  "advertencias": []
+}
