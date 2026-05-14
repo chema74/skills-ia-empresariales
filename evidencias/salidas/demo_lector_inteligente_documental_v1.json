@@ -1,0 +1,26 @@
+{
+  "nombre_skill": "lector_inteligente_documental",
+  "estado": "ok",
+  "salida": {
+    "mensaje": "Lectura documental completada en local",
+    "total_secciones": 5,
+    "resumen_secciones": [
+      "S1: Acta de Comité Operativo",
+      "S2: Se revisa el estado de proveedores críticos y se aprueba revisión contractual trimestral.",
+      "S3: Riesgos detectados",
+      "S4: Se identifica riesgo de retraso logístico y necesidad de plan de contingencia.",
+      "S5: Acciones recomendadas"
+    ],
+    "palabras_detectadas": {
+      "riesgo": 3,
+      "presupuesto": 1,
+      "contingencia": 1
+    }
+  },
+  "trazas": [
+    "local|2026-05-14T17:51:35.722693+00:00|inicio_lectura_documental",
+    "local|2026-05-14T17:51:35.722693+00:00|secciones_extraidas",
+    "local|2026-05-14T17:51:35.722693+00:00|resumen_generado"
+  ],
+  "advertencias": []
+}

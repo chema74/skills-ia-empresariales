@@ -1,0 +1,24 @@
+{
+  "nombre_skill": "radar_anomalias",
+  "estado": "ok",
+  "salida": {
+    "mensaje": "Radar de anomalias completado en local",
+    "media": 155.0,
+    "desviacion": 92.6202,
+    "umbral_desviaciones": 2.0,
+    "total_anomalias": 1,
+    "anomalias": [
+      {
+        "indice": 5,
+        "valor": 400.0,
+        "z_score": 2.6452
+      }
+    ]
+  },
+  "trazas": [
+    "local|2026-05-14T17:55:26.196844+00:00|inicio_radar_anomalias",
+    "local|2026-05-14T17:55:26.197841+00:00|estadisticas_calculadas",
+    "local|2026-05-14T17:55:26.197841+00:00|deteccion_finalizada"
+  ],
+  "advertencias": []
+}

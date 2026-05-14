@@ -18,8 +18,8 @@
 
 | ID | Skill | Estado | Criterio actual |
 |---|---|---|---|
-| 01 | Lector Inteligente Documental | pendiente | Sin implementación |
-| 02 | Radar de Anomalías | pendiente | Sin implementación |
+| 01 | Lector Inteligente Documental | validada | V1 local con demo, evidencia y tests |
+| 02 | Radar de Anomalías | validada | V1 local con umbral estadístico, demo y tests |
 | 03 | Forjador de Informes | pendiente | Sin implementación |
 | 04 | Memoria Contextual de Cliente | pendiente | Sin implementación |
 | 05 | Pulso de Riesgo | pendiente | Sin implementación |
