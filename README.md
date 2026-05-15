@@ -6,7 +6,7 @@ Biblioteca modular en castellano de skills IA empresariales reutilizables, audit
 
 Repositorio de ingenieria IA aplicada orientado a producto:
 
-- Arquitectura modular de 10 skills empresariales.
+- Arquitectura modular de skills empresariales y de plataforma.
 - Contrato comun tipado para interoperabilidad.
 - Validacion estatica y pruebas automatizadas.
 - Demos y evidencias reproducibles en local.
@@ -25,7 +25,7 @@ Este repositorio define una base tecnica para construir capacidades IA reutiliza
 
 ## Estado actual
 
-El repositorio se encuentra en estado operativo local-first con las 10 skills previstas implementadas y validadas.
+El repositorio se encuentra en estado operativo local-first con roadmap V0-V8 completada.
 
 Resumen de avance:
 
@@ -34,8 +34,10 @@ Resumen de avance:
 - V2: primera skill funcional con control humano explicito.
 - V3: implementacion del catalogo empresarial en modulos independientes.
 - V4: demos locales y evidencias reproducibles para validacion tecnica.
-
-Las siguientes iteraciones se gestionan desde V5 en adelante en `ROADMAP.md`.
+- V5: endurecimiento de calidad, regresion de contratos y evidencias de integracion.
+- V6: orquestador multi-skill con 3 pipelines empresariales.
+- V7: gobernanza versionada y checklist de auditoria tecnica por release.
+- V8: capa de adaptadores LLM opcionales con fallback local garantizado.
 
 ## Skills implementadas
 
@@ -50,6 +52,11 @@ Las siguientes iteraciones se gestionan desde V5 en adelante en `ROADMAP.md`.
 09. Verificador Normativo
 10. Puerta de Aprobacion Humana
 
+Capacidades de plataforma adicionales:
+
+- Orquestador multi-skill (`orquestador_multiskill`).
+- Compositor con adaptadores LLM opcionales (`compositor_llm_opcional`).
+
 ## Arranque rapido en 2 minutos
 
 ```bash
@@ -63,27 +70,23 @@ python -m pytest -q
 
 Casos de uso demostrables con salida reproducible:
 
-- Demos ejecutables: `demos/demo_*.py` (10 escenarios).
-- Evidencias generadas: `evidencias/salidas/demo_*.json` (10 salidas).
-- Flujo integrado multi-skill: `tests/integracion/test_flujo_integrado.py`.
-
-Ejemplos directos:
-
-- `demos/demo_pulso_riesgo.py` -> `evidencias/salidas/demo_pulso_riesgo_v1.json`
-- `demos/demo_forjador_informes.py` -> `evidencias/salidas/demo_forjador_informes_v1.json`
-- `demos/demo_puerta_aprobacion_humana.py` -> `evidencias/salidas/demo_puerta_aprobacion_humana_v2.json`
+- Demos ejecutables: `demos/demo_*.py`.
+- Evidencias generadas: `evidencias/salidas/demo_*.json`.
+- Flujos integrados multi-skill: `tests/integracion/`.
 
 ## Metricas de calidad (estado actual)
 
 - `ruff`: en verde.
-- `mypy`: en verde (`18` ficheros revisados).
-- `pytest`: en verde (`36` tests).
+- `mypy`: en verde (`22` ficheros revisados).
+- `pytest`: en verde (`69` tests).
 - CI activa en `.github/workflows/validacion.yml`.
 
 ## Arquitectura y flujo
 
 - `docs/ARQUITECTURA.md`
 - `docs/ARQUITECTURA_FLUJO.md`
+- `docs/V6_PIPELINES.md`
+- `docs/V8_ADAPTADORES_LLM.md`
 
 ## Nota de seguridad por diseno
 

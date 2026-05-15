@@ -28,7 +28,7 @@
 
 - Limpieza de residuos de instalacion `~treamlit` en el entorno Python local para eliminar warnings de `pip`.
 
-### V5 en progreso
+### V5 completada
 
 - Nuevas pruebas de regresion de contratos para las 10 skills en `tests/test_regresion_contratos_skills.py`.
 - Nueva prueba de integracion de cumplimiento y aprobacion humana en `tests/integracion/test_flujo_cumplimiento_aprobacion.py`.

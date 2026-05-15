@@ -2,7 +2,7 @@
 
 ## Estado general
 
-Repositorio `skills-ia-empresariales` en estado funcional local-first con las 10 skills empresariales implementadas, validadas y demostrables.
+Repositorio `skills-ia-empresariales` en estado funcional local-first con roadmap V0-V8 completada.
 
 ## Avance por fases
 
@@ -11,19 +11,22 @@ Repositorio `skills-ia-empresariales` en estado funcional local-first con las 10
 - V2: Primera skill diferencial (`Puerta de Aprobacion Humana`) con control humano explicito.
 - V3: Implementacion de skills empresariales principales en modulos independientes.
 - V4: Demos locales y evidencias reproducibles para auditoria tecnica.
+- V5: Endurecimiento tecnico y calidad (regresion de contratos e integraciones).
+- V6: Orquestacion multi-skill con 3 pipelines documentados y probados.
+- V7: Gobernanza avanzada con politicas versionadas y auditoria tecnica por release.
+- V8: Integracion opcional con adaptadores LLM y fallback local garantizado.
 
 ## Inventario tecnico entregado
 
-- Nucleo comun: contratos, validacion y trazabilidad.
-- Plantilla de skill reutilizable para nuevas capacidades.
-- 10 skills con API funcional, tests unitarios y demos locales.
+- Nucleo comun: contratos, validacion, trazabilidad y gobernanza.
+- 10 skills empresariales con API funcional, tests y demos locales.
+- Capacidades adicionales de plataforma: orquestador multi-skill y composicion LLM opcional.
 - Evidencias JSON de salida en `evidencias/salidas/`.
 
 ## Garantias de alcance actual
 
 - Enfoque free-first y local-first.
 - Sin dependencia de Internet ni APIs externas para pruebas base.
-- Sin claves reales ni uso de `.env` real.
 - Seguridad por diseno, trazabilidad, validacion y limites explicitos.
 - Revision humana incorporada para decisiones sensibles.
 
@@ -31,13 +34,16 @@ Repositorio `skills-ia-empresariales` en estado funcional local-first con las 10
 
 ```bash
 git status
-git diff --stat
+python -m ruff check src tests
+python -m mypy src
 python -m pytest -q
 ```
 
-## Proxima iteracion sugerida
+## Estado de calidad actual
 
-- Endurecimiento V5: cobertura de tests de integracion entre skills, validacion cruzada de salidas y empaquetado de demo integral para auditoria.
+- `ruff`: en verde.
+- `mypy`: en verde (`22` source files).
+- `pytest`: en verde (`69` tests).
 
 Publicado bajo licencia Creative Commons CC BY-SA 4.0 International.
 (c) 2025 - Txema Rios. Todos los derechos compartidos.

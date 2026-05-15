@@ -1,4 +1,4 @@
-# Auditoria Tecnica por Release
+﻿# Auditoria Tecnica por Release
 
 ## Objetivo
 
@@ -18,10 +18,10 @@ Definir una checklist minima y repetible para auditoria tecnica antes de publica
 - Registro de cambios actualizado en `configs/gobernanza/registro_cambios_gobernanza.json`
 
 4. Evidencias de demos
-- Evidencias de flujos V6 y V7 presentes en `evidencias/salidas/`
+- Evidencias de flujos V6, V7 y V8 presentes en `evidencias/salidas/`
 
 5. Consistencia documental
-- `ROADMAP.md` y `CHANGELOG.md` actualizados
+- `README.md`, `ROADMAP.md` y `CHANGELOG.md` actualizados
 - Checklist de release disponible en `RELEASE_CHECKLIST.md`
 
 ## Plantilla de acta de auditoria

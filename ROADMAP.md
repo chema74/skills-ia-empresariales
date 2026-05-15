@@ -13,7 +13,7 @@ El repositorio se encuentra en estado funcional local-first con:
 
 Objetivo: aumentar fiabilidad operativa y mantenibilidad.
 
-Estado: en progreso (2026-05-15).
+Estado: completado (2026-05-15).
 
 - Elevar cobertura de pruebas unitarias y anadir pruebas de integracion entre skills.
 - Incluir verificacion estatica en CI (`ruff`, `mypy`) con umbrales minimos definidos.
