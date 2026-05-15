@@ -29,19 +29,50 @@ class SkillBase:
     ) -> ResultadoSkill:
         """Crea y valida un ResultadoSkill estandar."""
 
+        salida_normalizada = dict(salida)
+        salida_normalizada["mensaje"] = self._normalizar_mensaje(estado=estado, mensaje=salida.get("mensaje"))
+        advertencias_normalizadas = self._normalizar_advertencias(advertencias or [])
+
         resultado = ResultadoSkill(
             nombre_skill=self.nombre_skill,
             estado=estado,
-            salida=salida,
+            salida=salida_normalizada,
             trazas=trazas,
-            advertencias=advertencias or [],
+            advertencias=advertencias_normalizadas,
         )
 
         es_valido, errores = validar_resultado_skill(resultado)
         if not es_valido:
             self.nueva_traza(trazas, "resultado_con_errores_de_contrato")
             resultado.estado = "error"
-            resultado.advertencias.extend(errores)
-            resultado.salida["mensaje"] = "Resultado invalido por reglas de contrato"
+            resultado.advertencias.extend(self._normalizar_advertencias(errores))
+            resultado.salida["mensaje"] = self._normalizar_mensaje(
+                estado="error",
+                mensaje="Resultado invalido por reglas de contrato",
+            )
 
         return resultado
+
+    def _normalizar_mensaje(self, estado: str, mensaje: Any) -> str:
+        texto = str(mensaje or "").strip() or "sin detalle"
+        prefijo_por_estado = {
+            "ok": "OK",
+            "error": "ERROR",
+            "advertencia": "ADVERTENCIA",
+        }
+        prefijo = prefijo_por_estado.get(estado, "INFO")
+        if texto.upper().startswith(f"{prefijo}:"):
+            return texto
+        return f"{prefijo}: {texto}"
+
+    def _normalizar_advertencias(self, advertencias: list[str]) -> list[str]:
+        normalizadas: list[str] = []
+        for advertencia in advertencias:
+            texto = advertencia.strip()
+            if not texto:
+                continue
+            if texto.upper().startswith("WARN:"):
+                normalizadas.append(texto)
+            else:
+                normalizadas.append(f"WARN: {texto}")
+        return normalizadas
