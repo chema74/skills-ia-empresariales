@@ -8,6 +8,8 @@
 - Actualizacion de `ROADMAP.md` con estado real del repositorio y plan V5 a V8.
 - Creacion de `RELEASE_CHECKLIST.md` con criterios operativos de salida.
 - Alineacion de `README.md` con la madurez actual del repositorio.
+- Refuerzo de `README.md` para evaluacion tecnica de reclutadores (quickstart, resultados, metricas y enlaces de arquitectura).
+- Creacion de `docs/ARQUITECTURA_FLUJO.md` con diagrama textual de flujo end-to-end.
 
 ### Calidad y validacion
 

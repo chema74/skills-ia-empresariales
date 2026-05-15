@@ -2,7 +2,16 @@
 
 Biblioteca modular en castellano de skills IA empresariales reutilizables, auditables y demostrables.
 
-## Objetivo del repositorio
+## Para reclutadores tecnicos
+
+Repositorio de ingenieria IA aplicada orientado a producto:
+
+- Arquitectura modular de 10 skills empresariales.
+- Contrato comun tipado para interoperabilidad.
+- Validacion estatica y pruebas automatizadas.
+- Demos y evidencias reproducibles en local.
+
+## Problema que resuelve
 
 Este repositorio define una base tecnica para construir capacidades IA reutilizables que puedan funcionar de forma independiente o integradas en agentes mayores. No es una coleccion de prompts y no es un agente monolitico.
 
@@ -28,7 +37,7 @@ Resumen de avance:
 
 Las siguientes iteraciones se gestionan desde V5 en adelante en `ROADMAP.md`.
 
-## Skills previstas
+## Skills implementadas
 
 01. Lector Inteligente Documental
 02. Radar de Anomalias
@@ -41,11 +50,40 @@ Las siguientes iteraciones se gestionan desde V5 en adelante en `ROADMAP.md`.
 09. Verificador Normativo
 10. Puerta de Aprobacion Humana
 
-## Ejecucion de pruebas
+## Arranque rapido en 2 minutos
 
 ```bash
+python -m pip install -e ".[dev]"
+python -m ruff check src tests
+python -m mypy src
 python -m pytest -q
 ```
+
+## Resultados verificables
+
+Casos de uso demostrables con salida reproducible:
+
+- Demos ejecutables: `demos/demo_*.py` (10 escenarios).
+- Evidencias generadas: `evidencias/salidas/demo_*.json` (10 salidas).
+- Flujo integrado multi-skill: `tests/integracion/test_flujo_integrado.py`.
+
+Ejemplos directos:
+
+- `demos/demo_pulso_riesgo.py` -> `evidencias/salidas/demo_pulso_riesgo_v1.json`
+- `demos/demo_forjador_informes.py` -> `evidencias/salidas/demo_forjador_informes_v1.json`
+- `demos/demo_puerta_aprobacion_humana.py` -> `evidencias/salidas/demo_puerta_aprobacion_humana_v2.json`
+
+## Metricas de calidad (estado actual)
+
+- `ruff`: en verde.
+- `mypy`: en verde (`18` ficheros revisados).
+- `pytest`: en verde (`36` tests).
+- CI activa en `.github/workflows/validacion.yml`.
+
+## Arquitectura y flujo
+
+- `docs/ARQUITECTURA.md`
+- `docs/ARQUITECTURA_FLUJO.md`
 
 ## Nota de seguridad por diseno
 
