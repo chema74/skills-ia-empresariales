@@ -7,6 +7,11 @@ from .buscador_privado_aumentado import (
     SolicitudBusquedaPrivada,
     evaluar_buscador_privado_aumentado,
 )
+from .compositor_llm_opcional import (
+    CompositorLLMOpcionalSkill,
+    SolicitudComposicionLLM,
+    evaluar_compositor_llm_opcional,
+)
 from .enrutador_inteligente import EnrutadorInteligenteSkill, SolicitudEnrutamiento, evaluar_enrutador_inteligente
 from .forjador_informes import ForjadorInformesSkill, SolicitudForjadorInformes, evaluar_forjador_informes
 from .lector_inteligente_documental import (
@@ -51,6 +56,9 @@ __all__ = [
     "DocumentoPrivado",
     "SolicitudBusquedaPrivada",
     "evaluar_buscador_privado_aumentado",
+    "CompositorLLMOpcionalSkill",
+    "SolicitudComposicionLLM",
+    "evaluar_compositor_llm_opcional",
     "EnrutadorInteligenteSkill",
     "SolicitudEnrutamiento",
     "evaluar_enrutador_inteligente",

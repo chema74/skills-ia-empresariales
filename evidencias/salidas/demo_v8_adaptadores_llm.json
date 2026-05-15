@@ -1,0 +1,52 @@
+{
+  "v8": {
+    "fallback_local": {
+      "nombre_skill": "compositor_llm_opcional",
+      "estado": "ok",
+      "salida": {
+        "mensaje": "OK: Composicion completada con capa LLM opcional",
+        "proveedor_solicitado": "mock_groq",
+        "proveedor_efectivo": "local_reglas",
+        "uso_fallback_local": true,
+        "texto_generado": "Salida local-first: Resume riesgos operativos en una frase.",
+        "tokens_estimados": 14,
+        "adaptadores_disponibles": [
+          "local_reglas",
+          "mock_groq"
+        ]
+      },
+      "trazas": [
+        "local|2026-05-15T07:34:41.983210+00:00|inicio_composicion_llm_opcional",
+        "local|2026-05-15T07:34:41.984210+00:00|intento_proveedor:mock_groq",
+        "local|2026-05-15T07:34:41.984210+00:00|fallback_local_activado",
+        "local|2026-05-15T07:34:41.984210+00:00|fin_composicion_llm_opcional"
+      ],
+      "advertencias": [
+        "WARN: fallback activado: proveedor 'mock_groq' no disponible o con error"
+      ]
+    },
+    "proveedor_opcional_habilitado": {
+      "nombre_skill": "compositor_llm_opcional",
+      "estado": "ok",
+      "salida": {
+        "mensaje": "OK: Composicion completada con capa LLM opcional",
+        "proveedor_solicitado": "mock_groq",
+        "proveedor_efectivo": "mock_groq",
+        "uso_fallback_local": false,
+        "texto_generado": "MockGroq respuesta: Redacta cierre ejecutivo para comite de riesgo.",
+        "tokens_estimados": 16,
+        "adaptadores_disponibles": [
+          "local_reglas",
+          "mock_groq"
+        ]
+      },
+      "trazas": [
+        "local|2026-05-15T07:34:41.984210+00:00|inicio_composicion_llm_opcional",
+        "local|2026-05-15T07:34:41.984210+00:00|intento_proveedor:mock_groq",
+        "local|2026-05-15T07:34:41.984210+00:00|proveedor_activo:mock_groq",
+        "local|2026-05-15T07:34:41.984210+00:00|fin_composicion_llm_opcional"
+      ],
+      "advertencias": []
+    }
+  }
+}

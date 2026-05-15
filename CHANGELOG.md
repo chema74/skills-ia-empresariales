@@ -76,3 +76,22 @@
 - `tests/test_gobernanza_v7.py`
 - ampliaciones en `tests/test_puerta_aprobacion_humana.py` y `tests/test_cli_puerta_aprobacion_humana.py`
 - Validacion actualizada en local: `61 passed`.
+
+### V8 completada
+
+- Nueva capa de adaptadores LLM opcionales:
+- `src/skillforge/core/adaptadores_llm.py`
+- Contrato comun de respuesta para adaptadores (`RespuestaAdaptadorLLM`).
+- Proveedor opcional simulado `mock_groq` con activacion por entorno.
+- Fallback local garantizado `local_reglas` sin dependencias externas.
+- Nueva skill de composicion hibrida:
+- `src/skillforge/skills/compositor_llm_opcional.py`
+- Exportes publicos actualizados en `src/skillforge/skills/__init__.py`.
+- Documentacion V8:
+- `docs/V8_ADAPTADORES_LLM.md`
+- Demo y evidencia V8:
+- `demos/demo_v8_adaptadores_llm.py`
+- `evidencias/salidas/demo_v8_adaptadores_llm.json`
+- Pruebas de contrato y compatibilidad entre adaptadores:
+- `tests/test_adaptadores_llm_v8.py`
+- `tests/test_compositor_llm_opcional_v8.py`

@@ -60,6 +60,8 @@ Criterio de cierre V7:
 
 Objetivo: habilitar capacidades LLM sin romper el modo local-first.
 
+Estado: completado (2026-05-15).
+
 - Crear capa de adaptadores para proveedores externos opcionales.
 - Mantener fallback local funcional cuando no haya conexion o proveedor.
 - Definir pruebas de contrato para garantizar compatibilidad entre adaptadores.
