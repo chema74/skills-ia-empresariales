@@ -27,3 +27,13 @@
 ### Entorno local
 
 - Limpieza de residuos de instalacion `~treamlit` en el entorno Python local para eliminar warnings de `pip`.
+
+### V5 en progreso
+
+- Nuevas pruebas de regresion de contratos para las 10 skills en `tests/test_regresion_contratos_skills.py`.
+- Nueva prueba de integracion de cumplimiento y aprobacion humana en `tests/integracion/test_flujo_cumplimiento_aprobacion.py`.
+- Nueva demo de integracion V5 en `demos/demo_v5_integracion.py`.
+- Evidencias de integracion V5 publicadas:
+- `evidencias/salidas/demo_v5_integracion_riesgo_informe.json`
+- `evidencias/salidas/demo_v5_integracion_normativa_aprobacion.json`
+- Validacion actualizada en local: `50 passed`.

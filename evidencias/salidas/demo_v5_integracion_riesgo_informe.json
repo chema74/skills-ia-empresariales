@@ -1,0 +1,85 @@
+{
+  "flujo": "enrutado_riesgo_informe",
+  "pasos": [
+    {
+      "nombre_skill": "enrutador_inteligente",
+      "estado": "ok",
+      "salida": {
+        "mensaje": "Enrutamiento completado en local",
+        "intencion": "Necesito evaluar riesgo operativo y preparar informe ejecutivo",
+        "skill_destino": "forjador_informes",
+        "skills_candidatas": [
+          "forjador_informes",
+          "pulso_riesgo"
+        ],
+        "plan_ejecucion": [
+          "validar_entrada",
+          "ejecutar_skill:forjador_informes",
+          "validar_resultado",
+          "registrar_trazas_locales"
+        ],
+        "metadatos": {}
+      },
+      "trazas": [
+        "local|2026-05-15T07:09:30.391516+00:00|inicio_enrutamiento",
+        "local|2026-05-15T07:09:30.391516+00:00|coincidencias_detectadas",
+        "local|2026-05-15T07:09:30.391516+00:00|plan_generado"
+      ],
+      "advertencias": [
+        "intencion ambigua: múltiples skills candidatas"
+      ]
+    },
+    {
+      "nombre_skill": "pulso_riesgo",
+      "estado": "ok",
+      "salida": {
+        "mensaje": "Pulso de riesgo calculado en local",
+        "puntuacion": 53.0,
+        "nivel_riesgo": "medio",
+        "umbral_medio": 35.0,
+        "umbral_alto": 70.0,
+        "detalle_factores": [
+          {
+            "nombre": "continuidad",
+            "severidad": 8,
+            "peso": 4.0,
+            "contribucion": 32.0
+          },
+          {
+            "nombre": "cumplimiento",
+            "severidad": 7,
+            "peso": 3.0,
+            "contribucion": 21.0
+          }
+        ],
+        "recomendaciones": [
+          "Programar revisión semanal de factores",
+          "Definir acciones preventivas con responsables"
+        ]
+      },
+      "trazas": [
+        "local|2026-05-15T07:09:30.391516+00:00|inicio_pulso_riesgo",
+        "local|2026-05-15T07:09:30.391516+00:00|puntuacion_calculada",
+        "local|2026-05-15T07:09:30.391516+00:00|clasificacion_riesgo"
+      ],
+      "advertencias": []
+    },
+    {
+      "nombre_skill": "forjador_informes",
+      "estado": "ok",
+      "salida": {
+        "mensaje": "Informe generado en local",
+        "titulo": "Informe Integrado V5",
+        "informe_markdown": "# Informe Integrado V5\n\n## Contexto\nSolicitante: orquestador\nDescripcion: demo_v5\n\n## Metricas\n- puntuacion_riesgo: 53.0\n\n## Hallazgos\n- Nivel detectado: medio\n\n## Recomendaciones\n- Programar revisión semanal de factores\n- Definir acciones preventivas con responsables\n",
+        "total_hallazgos": 1,
+        "total_metricas": 1,
+        "total_recomendaciones": 2
+      },
+      "trazas": [
+        "local|2026-05-15T07:09:30.391516+00:00|inicio_forjado_informe",
+        "local|2026-05-15T07:09:30.391516+00:00|informe_generado"
+      ],
+      "advertencias": []
+    }
+  ]
+}
