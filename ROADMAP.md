@@ -1,31 +1,73 @@
 ﻿# Roadmap
 
-## V0 — Base del repositorio
+## Estado actual (mayo 2026)
 
-- Estructura modular inicial.
-- Contrato común mínimo.
-- Documentación base de arquitectura, seguridad y demo local.
-- Test de humo del contrato.
+El repositorio se encuentra en estado funcional local-first con:
 
-## V1 — Núcleo común
+- 10 skills implementadas y validadas.
+- Contrato comun estable (`EntradaSkill` y `ResultadoSkill`).
+- Demos locales y evidencias reproducibles.
+- Base de seguridad por diseno con trazabilidad y revision humana para acciones sensibles.
 
-- Utilidades compartidas para validación, trazas y manejo de advertencias.
-- Convenciones de ejecución y observabilidad local.
+## V5 - Endurecimiento tecnico y calidad
 
-## V2 — Primera skill funcional
+Objetivo: aumentar fiabilidad operativa y mantenibilidad.
 
-- Skill recomendada: Puerta de Aprobación Humana.
-- Motivo: Diferencia el repositorio desde el inicio al introducir control humano, auditoría y gobernanza de acciones sensibles.
+- Elevar cobertura de pruebas unitarias y anadir pruebas de integracion entre skills.
+- Incluir verificacion estatica en CI (`ruff`, `mypy`) con umbrales minimos definidos.
+- Anadir pruebas de regresion para contratos de entrada/salida.
+- Estandarizar mensajes de error y advertencias para facilitar observabilidad.
 
-## V3 — Skills empresariales principales
+Criterio de cierre V5:
 
-- Implementación incremental del catálogo prioritario.
-- Normalización de entradas y salidas entre skills.
+- CI en verde de forma estable.
+- Sin errores criticos en linting y tipado estatico.
+- Evidencias de pruebas de integracion publicadas.
 
-## V4 — Demos, evidencias e integración
+## V6 - Orquestacion y flujos multi-skill
 
-- Demos locales integradas.
-- Evidencias reproducibles en capturas y salidas.
-- Integración con agentes mayores mediante contratos estables.
+Objetivo: pasar de skills aisladas a flujos de trabajo coordinados.
+
+- Disenar un orquestador local para encadenar skills con reglas explicitas.
+- Definir plantillas de pipeline para casos de uso empresariales frecuentes.
+- Anadir trazabilidad de extremo a extremo en ejecuciones multi-skill.
+
+Criterio de cierre V6:
+
+- Al menos 3 pipelines multi-skill documentados y probados.
+- Trazas completas por ejecucion con identificacion de cada paso.
+
+## V7 - Gobernanza avanzada y auditoria
+
+Objetivo: reforzar control, cumplimiento y capacidad de auditoria.
+
+- Extender controles de aprobacion humana con politicas por tipo de accion.
+- Versionar politicas de validacion y registrar cambios de gobernanza.
+- Incorporar checklists de auditoria tecnica para cada release.
+
+Criterio de cierre V7:
+
+- Politicas versionadas y trazables.
+- Evidencias de auditoria publicadas para todos los flujos criticos.
+
+## V8 - Integracion opcional con proveedores LLM
+
+Objetivo: habilitar capacidades LLM sin romper el modo local-first.
+
+- Crear capa de adaptadores para proveedores externos opcionales.
+- Mantener fallback local funcional cuando no haya conexion o proveedor.
+- Definir pruebas de contrato para garantizar compatibilidad entre adaptadores.
+
+Criterio de cierre V8:
+
+- Integracion opcional activa con al menos un proveedor.
+- Ejecucion local base intacta y validada sin dependencias externas.
+
+## Mantenimiento continuo
+
+- Revisar roadmap al cierre de cada version.
+- Publicar fecha de ultima validacion en documentacion tecnica.
+- Mantener consistencia entre estado real, catalogo tecnico y roadmap.
+
 Publicado bajo licencia Creative Commons CC BY-SA 4.0 International.  
-© 2025 – Txema Ríos. Todos los derechos compartidos.
+(c) 2025 - Txema Rios. Todos los derechos compartidos.
