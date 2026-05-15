@@ -1,0 +1,12 @@
+{
+  "sistema": "gobernanza_aprobaciones",
+  "cambios": [
+    {
+      "version": "v1.0.0",
+      "fecha": "2026-05-15",
+      "tipo": "alta_version",
+      "descripcion": "Primera version de politicas de aprobacion por tipo de accion sensible.",
+      "impacto": "Estandariza controles, roles aprobadores y evidencia minima."
+    }
+  ]
+}

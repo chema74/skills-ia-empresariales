@@ -45,6 +45,8 @@ Criterio de cierre V6:
 
 Objetivo: reforzar control, cumplimiento y capacidad de auditoria.
 
+Estado: completado (2026-05-15).
+
 - Extender controles de aprobacion humana con politicas por tipo de accion.
 - Versionar politicas de validacion y registrar cambios de gobernanza.
 - Incorporar checklists de auditoria tecnica para cada release.

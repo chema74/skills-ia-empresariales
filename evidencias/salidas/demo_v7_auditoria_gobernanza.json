@@ -1,0 +1,14 @@
+{
+  "release": "v7-governanza",
+  "fecha": "2026-05-15",
+  "estado": "aprobada",
+  "resultados": {
+    "gobernanza_versionada": true,
+    "registro_cambios_gobernanza": true,
+    "politica_aprobar_pago_v1": true
+  },
+  "resumen": {
+    "total_politicas": 4,
+    "total_cambios_gobernanza": 1
+  }
+}

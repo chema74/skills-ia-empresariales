@@ -37,6 +37,10 @@ def test_cli_habilita_accion_con_aprobacion() -> None:
         "finanzas",
         "--aprobador",
         "direccion",
+        "--rol-aprobador",
+        "direccion",
+        "--evidencia-id",
+        "EV-CLI-001",
         "--aprobada",
     ]
 

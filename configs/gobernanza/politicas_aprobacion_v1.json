@@ -1,0 +1,34 @@
+{
+  "version": "v1.0.0",
+  "ultima_actualizacion": "2026-05-15",
+  "politicas": [
+    {
+      "accion": "aprobar_pago",
+      "nivel_riesgo": "alto",
+      "requiere_aprobacion": true,
+      "roles_aprobadores": ["direccion", "finanzas_senior"],
+      "requiere_evidencia": true
+    },
+    {
+      "accion": "modificar_contrato",
+      "nivel_riesgo": "alto",
+      "requiere_aprobacion": true,
+      "roles_aprobadores": ["direccion", "legal"],
+      "requiere_evidencia": true
+    },
+    {
+      "accion": "publicar_comunicacion",
+      "nivel_riesgo": "medio",
+      "requiere_aprobacion": true,
+      "roles_aprobadores": ["direccion", "comunicacion", "legal"],
+      "requiere_evidencia": true
+    },
+    {
+      "accion": "enviar_correo_externo",
+      "nivel_riesgo": "medio",
+      "requiere_aprobacion": true,
+      "roles_aprobadores": ["comercial", "direccion"],
+      "requiere_evidencia": false
+    }
+  ]
+}

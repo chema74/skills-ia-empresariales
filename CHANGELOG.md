@@ -56,3 +56,23 @@
 - Pruebas de integracion V6:
 - `tests/integracion/test_orquestador_multiskill_v6.py`
 - Validacion actualizada en local: `57 passed`.
+
+### V7 completada
+
+- Nuevo nucleo de gobernanza versionada:
+- `src/skillforge/core/gobernanza.py`
+- Politicas por tipo de accion y nivel de riesgo:
+- `configs/gobernanza/politicas_aprobacion_v1.json`
+- Registro de cambios de gobernanza:
+- `configs/gobernanza/registro_cambios_gobernanza.json`
+- Extension de `puerta_aprobacion_humana` con controles por rol aprobador y evidencia.
+- Actualizacion del CLI de aprobacion para soportar `rol-aprobador` y `evidencia-id`.
+- Nueva checklist de auditoria tecnica por release:
+- `docs/AUDITORIA_TECNICA_RELEASE.md`
+- Demo de auditoria V7 y evidencia reproducible:
+- `demos/demo_v7_auditoria_gobernanza.py`
+- `evidencias/salidas/demo_v7_auditoria_gobernanza.json`
+- Nuevas pruebas V7:
+- `tests/test_gobernanza_v7.py`
+- ampliaciones en `tests/test_puerta_aprobacion_humana.py` y `tests/test_cli_puerta_aprobacion_humana.py`
+- Validacion actualizada en local: `61 passed`.

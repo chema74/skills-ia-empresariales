@@ -19,6 +19,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--descripcion", required=True, help="Descripcion de la accion")
     parser.add_argument("--solicitante", required=True, help="Responsable que solicita la accion")
     parser.add_argument("--aprobador", default=None, help="Persona que aprueba la accion")
+    parser.add_argument("--rol-aprobador", default=None, help="Rol de la persona que aprueba")
+    parser.add_argument("--evidencia-id", default=None, help="Identificador de evidencia de aprobacion")
     parser.add_argument("--aprobada", action="store_true", help="Marca la accion como aprobada")
     return parser.parse_args()
 
@@ -31,6 +33,8 @@ def main() -> None:
         descripcion=args.descripcion,
         solicitante=args.solicitante,
         aprobador=args.aprobador,
+        rol_aprobador=args.rol_aprobador,
+        evidencia_id=args.evidencia_id,
         aprobada=args.aprobada,
     )
 
