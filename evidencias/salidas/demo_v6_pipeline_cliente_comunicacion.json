@@ -1,0 +1,77 @@
+{
+  "nombre_skill": "orquestador_multiskill",
+  "estado": "ok",
+  "salida": {
+    "mensaje": "OK: Pipeline ejecutado: cliente_comunicacion",
+    "pipeline_id": "cliente_comunicacion",
+    "total_pasos": 2,
+    "pasos": [
+      {
+        "paso": "memoria_contextual_cliente",
+        "skill": "memoria_contextual_cliente",
+        "estado": "ok",
+        "mensaje": "OK: Memoria contextual consolidada en local",
+        "trazas": [
+          "local|2026-05-15T07:21:58.667305+00:00|inicio_memoria_cliente",
+          "local|2026-05-15T07:21:58.667305+00:00|eventos_ordenados",
+          "local|2026-05-15T07:21:58.667305+00:00|memoria_consolidada"
+        ],
+        "advertencias": [],
+        "salida": {
+          "mensaje": "OK: Memoria contextual consolidada en local",
+          "cliente_id": "CLI-77",
+          "total_eventos": 1,
+          "ultima_interaccion": {
+            "fecha": "2026-05-10T10:00:00",
+            "tipo": "reunion",
+            "detalle": "revision trimestral"
+          },
+          "responsable_actual": null,
+          "prioridad_actual": null,
+          "timeline": [
+            {
+              "fecha": "2026-05-10T10:00:00",
+              "tipo": "reunion",
+              "detalle": "revision trimestral",
+              "origen": "crm"
+            }
+          ]
+        }
+      },
+      {
+        "paso": "voz_marca_inteligente",
+        "skill": "voz_marca_inteligente",
+        "estado": "ok",
+        "mensaje": "OK: Voz de marca adaptada en local",
+        "trazas": [
+          "local|2026-05-15T07:21:58.667305+00:00|inicio_voz_marca",
+          "local|2026-05-15T07:21:58.667305+00:00|texto_adaptado"
+        ],
+        "advertencias": [],
+        "salida": {
+          "mensaje": "OK: Voz de marca adaptada en local",
+          "tono_objetivo": "ejecutivo",
+          "texto_original": "Seguimos acompanando la operacion con foco en continuidad del servicio.",
+          "texto_adaptado": "Resumen ejecutivo: Seguimos acompanando la operacion con foco en continuidad del servicio.",
+          "checklist_marca": {
+            "tono_objetivo_aplicado": true,
+            "sin_promesas_absolutas": true,
+            "incluye_palabras_clave": true
+          }
+        }
+      }
+    ]
+  },
+  "trazas": [
+    "local|2026-05-15T07:21:58.667305+00:00|inicio_pipeline:cliente_comunicacion",
+    "local|2026-05-15T07:21:58.667305+00:00|pipeline:cliente_comunicacion:paso:memoria_contextual_cliente:inicio",
+    "paso:memoria_contextual_cliente:local|2026-05-15T07:21:58.667305+00:00|inicio_memoria_cliente",
+    "paso:memoria_contextual_cliente:local|2026-05-15T07:21:58.667305+00:00|eventos_ordenados",
+    "paso:memoria_contextual_cliente:local|2026-05-15T07:21:58.667305+00:00|memoria_consolidada",
+    "local|2026-05-15T07:21:58.667305+00:00|pipeline:cliente_comunicacion:paso:voz_marca_inteligente:inicio",
+    "paso:voz_marca_inteligente:local|2026-05-15T07:21:58.667305+00:00|inicio_voz_marca",
+    "paso:voz_marca_inteligente:local|2026-05-15T07:21:58.667305+00:00|texto_adaptado",
+    "local|2026-05-15T07:21:58.667305+00:00|fin_pipeline:cliente_comunicacion:estado=ok"
+  ],
+  "advertencias": []
+}

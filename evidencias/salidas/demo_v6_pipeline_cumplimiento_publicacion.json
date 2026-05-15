@@ -1,0 +1,76 @@
+{
+  "nombre_skill": "orquestador_multiskill",
+  "estado": "advertencia",
+  "salida": {
+    "mensaje": "ADVERTENCIA: Pipeline ejecutado: cumplimiento_publicacion",
+    "pipeline_id": "cumplimiento_publicacion",
+    "total_pasos": 2,
+    "pasos": [
+      {
+        "paso": "verificador_normativo",
+        "skill": "verificador_normativo",
+        "estado": "ok",
+        "mensaje": "OK: Verificacion normativa completada en local",
+        "trazas": [
+          "local|2026-05-15T07:21:58.667305+00:00|inicio_verificacion_normativa",
+          "local|2026-05-15T07:21:58.667305+00:00|reglas_evaluadas",
+          "local|2026-05-15T07:21:58.667305+00:00|informe_normativo_generado"
+        ],
+        "advertencias": [
+          "WARN: se detectan no conformidades: requiere revision humana"
+        ],
+        "salida": {
+          "mensaje": "OK: Verificacion normativa completada en local",
+          "total_reglas": 2,
+          "total_conformidades": 1,
+          "total_no_conformidades": 1,
+          "severidad_global": "media",
+          "conformidades": [
+            "RG-CONSENT"
+          ],
+          "no_conformidades": [
+            {
+              "codigo": "RG-PROMESA",
+              "descripcion": "No promesas absolutas",
+              "severidad": "media",
+              "motivo": "contiene prohibido: garantizado"
+            }
+          ]
+        }
+      },
+      {
+        "paso": "puerta_aprobacion_humana",
+        "skill": "puerta_aprobacion_humana",
+        "estado": "advertencia",
+        "mensaje": "ADVERTENCIA: Accion bloqueada hasta revision humana",
+        "trazas": [
+          "local|2026-05-15T07:21:58.667305+00:00|inicio_evaluacion",
+          "local|2026-05-15T07:21:58.667305+00:00|bloqueada_sin_aprobacion"
+        ],
+        "advertencias": [
+          "WARN: accion sensible bloqueada por falta de aprobacion humana"
+        ],
+        "salida": {
+          "mensaje": "ADVERTENCIA: Accion bloqueada hasta revision humana",
+          "accion": "publicar_comunicacion",
+          "requiere_aprobador": true
+        }
+      }
+    ]
+  },
+  "trazas": [
+    "local|2026-05-15T07:21:58.667305+00:00|inicio_pipeline:cumplimiento_publicacion",
+    "local|2026-05-15T07:21:58.667305+00:00|pipeline:cumplimiento_publicacion:paso:verificador_normativo:inicio",
+    "paso:verificador_normativo:local|2026-05-15T07:21:58.667305+00:00|inicio_verificacion_normativa",
+    "paso:verificador_normativo:local|2026-05-15T07:21:58.667305+00:00|reglas_evaluadas",
+    "paso:verificador_normativo:local|2026-05-15T07:21:58.667305+00:00|informe_normativo_generado",
+    "local|2026-05-15T07:21:58.667305+00:00|pipeline:cumplimiento_publicacion:paso:puerta_aprobacion_humana:inicio",
+    "paso:puerta_aprobacion_humana:local|2026-05-15T07:21:58.667305+00:00|inicio_evaluacion",
+    "paso:puerta_aprobacion_humana:local|2026-05-15T07:21:58.667305+00:00|bloqueada_sin_aprobacion",
+    "local|2026-05-15T07:21:58.667305+00:00|fin_pipeline:cumplimiento_publicacion:estado=advertencia"
+  ],
+  "advertencias": [
+    "WARN: se detectan no conformidades: requiere revision humana",
+    "WARN: accion sensible bloqueada por falta de aprobacion humana"
+  ]
+}

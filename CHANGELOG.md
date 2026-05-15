@@ -37,3 +37,22 @@
 - `evidencias/salidas/demo_v5_integracion_riesgo_informe.json`
 - `evidencias/salidas/demo_v5_integracion_normativa_aprobacion.json`
 - Validacion actualizada en local: `50 passed`.
+
+### V6 completada
+
+- Nuevo orquestador multi-skill: `src/skillforge/skills/orquestador_multiskill.py`.
+- Tres plantillas de pipeline empresariales implementadas:
+- `riesgo_informe`
+- `cumplimiento_publicacion`
+- `cliente_comunicacion`
+- Trazabilidad de extremo a extremo agregada por pipeline y por paso.
+- Exportes publicos del orquestador anadidos en `src/skillforge/skills/__init__.py`.
+- Documentacion V6 publicada en `docs/V6_PIPELINES.md`.
+- Demo V6 publicada en `demos/demo_v6_orquestador_multiskill.py`.
+- Evidencias V6 generadas:
+- `evidencias/salidas/demo_v6_pipeline_riesgo_informe.json`
+- `evidencias/salidas/demo_v6_pipeline_cumplimiento_publicacion.json`
+- `evidencias/salidas/demo_v6_pipeline_cliente_comunicacion.json`
+- Pruebas de integracion V6:
+- `tests/integracion/test_orquestador_multiskill_v6.py`
+- Validacion actualizada en local: `57 passed`.

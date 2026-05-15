@@ -30,6 +30,8 @@ Criterio de cierre V5:
 
 Objetivo: pasar de skills aisladas a flujos de trabajo coordinados.
 
+Estado: completado (2026-05-15).
+
 - Disenar un orquestador local para encadenar skills con reglas explicitas.
 - Definir plantillas de pipeline para casos de uso empresariales frecuentes.
 - Anadir trazabilidad de extremo a extremo en ejecuciones multi-skill.

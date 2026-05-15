@@ -1,0 +1,115 @@
+{
+  "nombre_skill": "orquestador_multiskill",
+  "estado": "ok",
+  "salida": {
+    "mensaje": "OK: Pipeline ejecutado: riesgo_informe",
+    "pipeline_id": "riesgo_informe",
+    "total_pasos": 3,
+    "pasos": [
+      {
+        "paso": "enrutamiento",
+        "skill": "enrutador_inteligente",
+        "estado": "ok",
+        "mensaje": "OK: Enrutamiento completado en local",
+        "trazas": [
+          "local|2026-05-15T07:21:58.666307+00:00|inicio_enrutamiento",
+          "local|2026-05-15T07:21:58.666307+00:00|coincidencias_detectadas",
+          "local|2026-05-15T07:21:58.666307+00:00|plan_generado"
+        ],
+        "advertencias": [
+          "WARN: intencion ambigua: múltiples skills candidatas"
+        ],
+        "salida": {
+          "mensaje": "OK: Enrutamiento completado en local",
+          "intencion": "Necesito evaluar riesgo y generar informe",
+          "skill_destino": "forjador_informes",
+          "skills_candidatas": [
+            "forjador_informes",
+            "pulso_riesgo"
+          ],
+          "plan_ejecucion": [
+            "validar_entrada",
+            "ejecutar_skill:forjador_informes",
+            "validar_resultado",
+            "registrar_trazas_locales"
+          ],
+          "metadatos": {}
+        }
+      },
+      {
+        "paso": "pulso_riesgo",
+        "skill": "pulso_riesgo",
+        "estado": "ok",
+        "mensaje": "OK: Pulso de riesgo calculado en local",
+        "trazas": [
+          "local|2026-05-15T07:21:58.667305+00:00|inicio_pulso_riesgo",
+          "local|2026-05-15T07:21:58.667305+00:00|puntuacion_calculada",
+          "local|2026-05-15T07:21:58.667305+00:00|clasificacion_riesgo"
+        ],
+        "advertencias": [],
+        "salida": {
+          "mensaje": "OK: Pulso de riesgo calculado en local",
+          "puntuacion": 53.0,
+          "nivel_riesgo": "medio",
+          "umbral_medio": 35.0,
+          "umbral_alto": 70.0,
+          "detalle_factores": [
+            {
+              "nombre": "continuidad",
+              "severidad": 8,
+              "peso": 4.0,
+              "contribucion": 32.0
+            },
+            {
+              "nombre": "cumplimiento",
+              "severidad": 7,
+              "peso": 3.0,
+              "contribucion": 21.0
+            }
+          ],
+          "recomendaciones": [
+            "Programar revisión semanal de factores",
+            "Definir acciones preventivas con responsables"
+          ]
+        }
+      },
+      {
+        "paso": "forjador_informes",
+        "skill": "forjador_informes",
+        "estado": "ok",
+        "mensaje": "OK: Informe generado en local",
+        "trazas": [
+          "local|2026-05-15T07:21:58.667305+00:00|inicio_forjado_informe",
+          "local|2026-05-15T07:21:58.667305+00:00|informe_generado"
+        ],
+        "advertencias": [],
+        "salida": {
+          "mensaje": "OK: Informe generado en local",
+          "titulo": "Informe Operativo V6",
+          "informe_markdown": "# Informe Operativo V6\n\n## Contexto\nSolicitante: orquestador\nDescripcion: demo_v6\n\n## Metricas\n- puntuacion_riesgo: 53.0\n\n## Hallazgos\n- Nivel de riesgo: medio\n\n## Recomendaciones\n- Programar revisión semanal de factores\n- Definir acciones preventivas con responsables\n",
+          "total_hallazgos": 1,
+          "total_metricas": 1,
+          "total_recomendaciones": 2
+        }
+      }
+    ]
+  },
+  "trazas": [
+    "local|2026-05-15T07:21:58.666307+00:00|inicio_pipeline:riesgo_informe",
+    "local|2026-05-15T07:21:58.666307+00:00|pipeline:riesgo_informe:paso:enrutamiento:inicio",
+    "paso:enrutamiento:local|2026-05-15T07:21:58.666307+00:00|inicio_enrutamiento",
+    "paso:enrutamiento:local|2026-05-15T07:21:58.666307+00:00|coincidencias_detectadas",
+    "paso:enrutamiento:local|2026-05-15T07:21:58.666307+00:00|plan_generado",
+    "local|2026-05-15T07:21:58.667305+00:00|pipeline:riesgo_informe:paso:pulso_riesgo:inicio",
+    "paso:pulso_riesgo:local|2026-05-15T07:21:58.667305+00:00|inicio_pulso_riesgo",
+    "paso:pulso_riesgo:local|2026-05-15T07:21:58.667305+00:00|puntuacion_calculada",
+    "paso:pulso_riesgo:local|2026-05-15T07:21:58.667305+00:00|clasificacion_riesgo",
+    "local|2026-05-15T07:21:58.667305+00:00|pipeline:riesgo_informe:paso:forjador_informes:inicio",
+    "paso:forjador_informes:local|2026-05-15T07:21:58.667305+00:00|inicio_forjado_informe",
+    "paso:forjador_informes:local|2026-05-15T07:21:58.667305+00:00|informe_generado",
+    "local|2026-05-15T07:21:58.667305+00:00|fin_pipeline:riesgo_informe:estado=ok"
+  ],
+  "advertencias": [
+    "WARN: intencion ambigua: múltiples skills candidatas"
+  ]
+}
