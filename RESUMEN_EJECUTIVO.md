@@ -1,4 +1,4 @@
-# Resumen Ejecutivo
+﻿# Resumen Ejecutivo
 
 ## Estado general
 
@@ -6,28 +6,28 @@ Repositorio `skills-ia-empresariales` en estado funcional local-first con las 10
 
 ## Avance por fases
 
-- V0: Estructura base, documentación inicial, contrato común y test de humo.
-- V1: Núcleo común con validación y trazabilidad reutilizable.
-- V2: Primera skill diferencial (`Puerta de Aprobación Humana`) con control humano explícito.
-- V3: Implementación de skills empresariales principales en módulos independientes.
-- V4: Demos locales y evidencias reproducibles para auditoría técnica.
+- V0: Estructura base, documentacion inicial, contrato comun y test de humo.
+- V1: Nucleo comun con validacion y trazabilidad reutilizable.
+- V2: Primera skill diferencial (`Puerta de Aprobacion Humana`) con control humano explicito.
+- V3: Implementacion de skills empresariales principales en modulos independientes.
+- V4: Demos locales y evidencias reproducibles para auditoria tecnica.
 
-## Inventario técnico entregado
+## Inventario tecnico entregado
 
-- Núcleo común: contratos, validación y trazabilidad.
+- Nucleo comun: contratos, validacion y trazabilidad.
 - Plantilla de skill reutilizable para nuevas capacidades.
 - 10 skills con API funcional, tests unitarios y demos locales.
 - Evidencias JSON de salida en `evidencias/salidas/`.
 
-## Garantías de alcance actual
+## Garantias de alcance actual
 
 - Enfoque free-first y local-first.
 - Sin dependencia de Internet ni APIs externas para pruebas base.
 - Sin claves reales ni uso de `.env` real.
-- Seguridad por diseño, trazabilidad, validación y límites explícitos.
-- Revisión humana incorporada para decisiones sensibles.
+- Seguridad por diseno, trazabilidad, validacion y limites explicitos.
+- Revision humana incorporada para decisiones sensibles.
 
-## Verificación recomendada
+## Verificacion recomendada
 
 ```bash
 git status
@@ -35,9 +35,9 @@ git diff --stat
 python -m pytest -q
 ```
 
-## Próxima iteración sugerida
+## Proxima iteracion sugerida
 
-- Endurecimiento V5: cobertura de tests de integración entre skills, validación cruzada de salidas y empaquetado de demo integral para auditoría.
+- Endurecimiento V5: cobertura de tests de integracion entre skills, validacion cruzada de salidas y empaquetado de demo integral para auditoria.
 
-Publicado bajo licencia Creative Commons CC BY-SA 4.0 International.  
-© 2025 – Txema Ríos. Todos los derechos compartidos.
+Publicado bajo licencia Creative Commons CC BY-SA 4.0 International.
+(c) 2025 - Txema Rios. Todos los derechos compartidos.

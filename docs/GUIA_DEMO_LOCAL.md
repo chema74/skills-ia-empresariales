@@ -1,32 +1,32 @@
-# Guía Demo Local
+﻿# Guia Demo Local
 
-## Instalación de dependencias de desarrollo
+## Instalacion de dependencias de desarrollo
 
 ```bash
 python -m pip install -e ".[dev]"
 ```
 
-## Ejecución de tests
+## Ejecucion de tests
 
 ```bash
 python -m pytest -q
 ```
 
-## Ejecución de demo V2
+## Ejecucion de demo V2
 
 ```bash
 python demos/demo_puerta_aprobacion_humana.py
 ```
 
-## Ejecución por CLI local
+## Ejecucion por CLI local
 
-Bloqueo por falta de aprobación humana:
+Bloqueo por falta de aprobacion humana:
 
 ```bash
 python ejemplos/cli_puerta_aprobacion_humana.py --accion aprobar_pago --descripcion "Pago urgente" --solicitante finanzas
 ```
 
-Aprobación explícita de acción sensible:
+Aprobacion explicita de accion sensible:
 
 ```bash
 python ejemplos/cli_puerta_aprobacion_humana.py --accion aprobar_pago --descripcion "Pago urgente" --solicitante finanzas --aprobador direccion --aprobada
@@ -40,17 +40,17 @@ La demo V2 guarda una evidencia reproducible en:
 
 ## Criterio de demos futuras
 
-Las demos deberán funcionar en local sin depender de APIs externas para su validación básica.
+Las demos deben funcionar en local sin depender de APIs externas para su validacion basica.
 
 ## Proveedor LLM opcional en fases futuras
 
-Groq podrá añadirse como proveedor LLM opcional en iteraciones posteriores, sin romper el flujo local-first.
+Groq puede anadirse como proveedor LLM opcional en iteraciones posteriores, sin romper el flujo local-first.
 
-## Alcance V0/V1/V2
+## Alcance V0 V1 V2
 
-- V0 valida estructura de repositorio, documentación base y contrato común mínimo.
-- V1 añade utilidades de validación y trazabilidad local.
-- V2 incorpora la primera skill funcional con control humano explícito.
+- V0 valida estructura de repositorio, documentacion base y contrato comun minimo.
+- V1 anade utilidades de validacion y trazabilidad local.
+- V2 incorpora la primera skill funcional con control humano explicito.
 
-Publicado bajo licencia Creative Commons CC BY-SA 4.0 International.  
-© 2025 – Txema Ríos. Todos los derechos compartidos.
+Publicado bajo licencia Creative Commons CC BY-SA 4.0 International.
+(c) 2025 - Txema Rios. Todos los derechos compartidos.
