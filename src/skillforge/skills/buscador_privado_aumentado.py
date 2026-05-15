@@ -98,7 +98,7 @@ class BuscadorPrivadoAumentadoSkill(SkillBase):
         )
 
     def _extraer_citas(self, contenido: str, tokens: list[str], max_citas: int = 2) -> list[str]:
-        lineas = [l.strip() for l in contenido.splitlines() if l.strip()]
+        lineas = [linea.strip() for linea in contenido.splitlines() if linea.strip()]
         citas: list[str] = []
         for linea in lineas:
             lmin = linea.lower()
