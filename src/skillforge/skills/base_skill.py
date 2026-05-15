@@ -1,5 +1,7 @@
 """Clase base para implementar skills reutilizables."""
 
+from typing import Any
+
 from skillforge.core.contratos import ResultadoSkill
 from skillforge.core.trazabilidad import agregar_traza_local
 from skillforge.core.validacion import validar_resultado_skill
@@ -21,7 +23,7 @@ class SkillBase:
     def construir_resultado(
         self,
         estado: str,
-        salida: dict,
+        salida: dict[str, Any],
         trazas: list[str],
         advertencias: list[str] | None = None,
     ) -> ResultadoSkill:
